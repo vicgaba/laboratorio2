@@ -2,9 +2,9 @@ package prueba;
 
 public class Primo {
 	public static String reverso(String str) {
-		String str2;
-		for(int i = str.length();i>=0;i--) {
-			str2=str2 + charAt(str[i]);
+		String str2="";
+		for(int i = str.length();i>0;i--) {
+			str2 += str.charAt(i-1);
 		}
 		return str2;
 	}
@@ -22,6 +22,6 @@ public class Primo {
 	public static void main(String[] args) {
 //		System.out.println(esPrimo(3));
 //		System.out.println(fibo(2));
-		System.out.println();
+		System.out.println(reverso("Julieta"));
 	}
 }
